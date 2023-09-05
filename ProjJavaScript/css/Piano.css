@@ -1,8 +1,115 @@
+body{
+    background-color: antiquewhite;
+}
 .teclado{
-    background-color: burlywood;
-    width: 80%;
-    height: 60%;
+    width: 900px;
+    height: 400px;
+    background-color: rgb(62, 61, 61);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+
+}
+.opocoes{
+    width: 100%;
+    height: 100px;
+}
+.teclas{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    margin-top: 100px;
+    padding: 20px 30px;
+}
+/* o z-index foi add por a tecla preta ter que ficar em cima da branca */
+.teclaBranca{
+    width: 60px;
+    height: auto;
+    background-color: #f5f5f5;
+    color: #353535;
+    margin-left: -10px;
+    border-radius: 5px;
+    z-index: 1;
+  
+  
+}
+/* span modificar especificamente a letra do teclado, e o transition foi colocado para ficar mais limpo
+quando é ativado ou desativado as letras */
+.teclaBranca span{
+    
+    font-weight: 600;
+    position: absolute;
+    padding: 3px;
+    transition-duration: 300ms;
+   
+    
+}
+.teclaBranca{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.teclaPreta{
+    width: 40px;
+    height:150px;
+    background-color: #000000;
+    color: rgb(174, 174, 174);
+    border-radius: 5px;
+    margin-left: -20px;
+    z-index: 2;
+}
+.teclaPreta span{
+    font-weight: 600;
+    position: absolute;
+    padding: 3px;
+    transition-duration: 300ms;
+   
+    
+}
+.teclaPreta{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* nth-child deixa eu modificar especificamente qual das divs quero modificar, por haver mais de uma div
+chamada "teclaBranca"  */
+.teclas .teclaBranca:nth-child(1){
+    margin-left:0px;
+}
+.teclas .teclaBranca:nth-child(5){
+    margin-right: 13px;
+}
+.teclas .teclaBranca:nth-child(12){
+    margin-right: 13px;
+}
+.teclas .teclaBranca:nth-child(17){
+    margin-right: 13px;
+}
+.opcoes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.botao{
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 10px;
+
+    
+}
+/* essa class é responsavel em desativar ou ativar as teclas, a maneira de funcionamento
+é, essa class é removida ou alocado na div dependo da situação do checkbox */
+.desabilitarLetras span{
+    opacity: 0;
 }

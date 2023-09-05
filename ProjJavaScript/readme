@@ -1,0 +1,8 @@
+Fui encarregado por fazer o piano, não ouve real dificuldade, mas tive que aprender basicamente muita coisa do zero,
+mas basicamente tudo era realmente facil de ser entendido e executado, dando abrangencia em meus conhecimentos
+em javaScript.
+Nosso piano tem no total 24 notas, não posso expecifica-las pois não tenho conhecimentos,
+cada tecla do piano pode ser tocada através de clicks ou pelo teclado e contém um botão que é responsavel
+por ativar ou desativar as teclas visiveis no piano.
+A estrutura são basicamentes divs com class, que são regatadas no javaScript e editadas.
+O código está mais espeficado dentro do proprio html,css e script 

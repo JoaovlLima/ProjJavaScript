@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piano</title>
-    <link rel="stylesheet" href="/css/Piano.css">
+    <link rel="stylesheet" href="./css/Piano.css">
 </head>
 <body>
     <a href="Index.html">Voltar</a>   
     <h1>Piano</h1>
 
     <div class="teclado">
-        <div class="teclaB1"> </div>
-        <div class="teclaP1"> </div>
-        <div class="teclaB2"> </div>
-        <div class="teclaP2"> </div>
-        <div class="teclaB3"> </div>
-        <div class="teclaP3"> </div>
-        <div class="teclaB4"> </div>
-        <div class="teclaP4"> </div>
+    
+        <div class="opcoes">
+            <!-- Botão de mostrar a teclas -->
+       <div class="botao">
+        <p>Show Teclas</p>
+        <input type="checkbox"  class="checkTecla">
+       </div>
+        </div>
+        <!-- Crianção das teclas -->
+    <div class="teclas desabilitarLetras">
+
+        <div class="teclaBranca" data-notas="1"><span>q</span></div>
+        <div class="teclaPreta" data-notas="2"><span>a</span></div>
+        <div class="teclaBranca" data-notas="3"><span>w</span></div>
+        <div class="teclaPreta" data-notas="4"><span>s</span></div>
+        <div class="teclaBranca" data-notas="5"><span>e</span></div>
+        <div class="teclaBranca" data-notas="6"><span>d</span></div>
+        <div class="teclaPreta" data-notas="7"><span>r</span></div>
+        <div class="teclaBranca" data-notas="8"><span>f</span></div>
+        <div class="teclaPreta" data-notas="9"><span>t</span></div>
+        <div class="teclaBranca" data-notas="10"><span>g</span></div>
+        <div class="teclaPreta" data-notas="11"><span>y</span></div>
+        <div class="teclaBranca" data-notas="12"><span>h</span></div>
+        <div class="teclaBranca" data-notas="13"><span>u</span></div>
+        <div class="teclaPreta" data-notas="14"><span>j</span></div>
+        <div class="teclaBranca" data-notas="15"><span>i</span></div>
+        <div class="teclaPreta" data-notas="16"><span>k</span></div>
+        <div class="teclaBranca" data-notas="17"><span>o</span></div>
+        <div class="teclaBranca" data-notas="18"><span>l</span></div>
+        <div class="teclaPreta" data-notas="19"><span>p</span></div>
+        <div class="teclaBranca" data-notas="20"><span>ç</span></div>
+        <div class="teclaPreta" data-notas="21"><span>-</span></div>
+        <div class="teclaBranca" data-notas="22"><span>;</span></div>
+        <div class="teclaPreta" data-notas="23"><span>[</span></div>
+        <div class="teclaBranca" data-notas="24"><span>]</span></div> 
+    </div>
     </div>
 </body>
-<script src="/Script/Piano.js"></script>
+<script src="./Script/Piano.js"></script>
 </html>
